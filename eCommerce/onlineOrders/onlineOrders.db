@@ -1,0 +1,2 @@
+
+{"orderId":"01","fullName":"Nicolas Lopez","address":"Carrer rei en jaume, Hospitalet.","email":"nicolaslo@outlook.es","phone":"627449101","items":[{"id":"p2","name":"Gold Necklace","qty":1,"unitPrice":800},{"id":"p4","name":"Luxury Watch","qty":1,"unitPrice":2500}],"subtotal":3300,"vat":21,"totalWithVAT":3993,"timestamp":"2025-10-16T15:24:31+02:00"}

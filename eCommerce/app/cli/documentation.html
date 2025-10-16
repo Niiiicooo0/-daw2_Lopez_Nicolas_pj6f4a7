@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentation • López Jeweler's</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .doc-box {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      max-width: 800px;
+      width: 92%;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 25px;
+      color: #444;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 14px;
+      text-align: justify;
+    }
+
+    ul {
+      margin-left: 25px;
+      color: #555;
+    }
+
+    .btns {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      background: #f8f9fa;
+      color: #222;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #e2e6ea;
+    }
+
+    footer {
+      text-align: center;
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <main class="main-container">
+    <div class="doc-box">
+      <h1>López Jeweler's</h1>
+      <h2>Application Description & Documentation</h2>
+
+      <p>
+        This application is a simple web system for managing customer orders for <strong>López Jeweler’s</strong>.
+        It allows users to create, save, and view jewelry orders, while the server handles data storage and
+        calculation of prices including VAT.
+      </p>
+
+      <p>
+        The system is divided into two main parts:
+        the <strong>client-side</strong> (HTML, CSS, and JavaScript for the interface) and the <strong>server-side</strong>
+        (PHP that processes and stores the data).
+      </p>
+
+      <h2>Functionalities Overview</h2>
+
+      <ul>
+        <li>
+          <strong>1. Home Page:</strong> The entry point of the application. Displays the logo, company name, and
+          two navigation buttons — <em>Documentation</em> and <em>Operations Menu</em>.
+        </li>
+
+        <li>
+          <strong>2. Documentation:</strong> This section (the current page) explains how the system works and
+          what each functionality does.
+        </li>
+
+        <li>
+          <strong>3. Operations Menu:</strong> Displays a selection menu where users can choose between
+          creating an order, viewing all existing orders, or viewing a specific order by ID.
+        </li>
+
+        <li>
+          <strong>4. Create and Save Order:</strong> Allows users to fill in order details (customer name, address,
+          contact information, and product quantities). Sends the information to the PHP server, which
+          calculates the total price including 21% VAT and saves it in the database.
+        </li>
+
+        <li>
+          <strong>5. View All Orders:</strong> The PHP server reads the database file and generates an HTML page
+          showing all the saved orders (one per line) separated by colons <code>:</code>.
+        </li>
+
+        <li>
+          <strong>6. View a Specific Order:</strong> Users can enter an Order ID to retrieve all details of a single
+          order, including the total with VAT and product breakdown.
+        </li>
+      </ul>
+
+      <div class="btns">
+        <button id="backHome" class="btn">Back to Home</button>
+        <button id="goMenu" class="btn">Go to Operations Menu</button>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 López Jeweler's Inc. • Application Documentation
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
